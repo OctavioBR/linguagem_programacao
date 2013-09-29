@@ -1,0 +1,30 @@
+Escolher uma ling: Scala
+(mais foda, mais irado by octavio)
+
+Link do trabalho, última página:
+http://www.inf.ufsc.br/~olinto/ine5622-cap3-132.pdf
+
+#### Introdução ####
+
+#### Descrição da LP (Aspectos Gerais) #####
+1. Histórico
+ Easy, tem no wikipédia um resumo podrinho, melhorar.
+
+2. Classificação (seção 2)
+
+3. Conceitos fundamentais (seção 3)
+
+
+#### Avaliação elaborada ######
+Obs.: Bem fundamentada e ilustrada com exemplos
+Critérios/Caracteristicas de avaliação. Ver seção 4.
+
+Já vai rolas uns code scala aqui então.
+
+
+
+### Conclusão ####
+
+### Bibliografia ####
+
+
