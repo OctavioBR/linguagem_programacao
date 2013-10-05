@@ -5,17 +5,24 @@ Link do trabalho, última página:
 http://www.inf.ufsc.br/~olinto/ine5622-cap3-132.pdf
 
 #### Introdução ####
+	Neste trabalho iremos abordar a linguagem de programação JavaScript, uma linguagem interpretada desenvolvida para Web. Sua implementação possibilita aos usuários interagir de maneira mais dinamica com as páginas da web, fazendo com que as aplicações fiquem mais interessantes. Algumas das suas funções classicas são alterações de elementos HTML ou CSS, comunicação assincrona com o servidor ou interação com o usuário. Ela foi concebida para ser executada no cliente (navegador) da aplicação, entretanto hoje em dia com uma tentativa de se usar apenas uma linguagem de programação para toda a aplicação foram desenvolvidos alguns frameworks como o node.js onde o desenvolvedor tem a possibilidade de programar em JavaScript do lado do servidor.
 
 #### Descrição da LP (Aspectos Gerais) #####
+	
 1. Histórico
- JavaScript foi originalmente desenvolvido por Brendan Eich da Netscape sob o nome de Mocha, posteriormente teve seu nome mudado para LiveScript e por fim JavaScript. LiveScript foi o nome oficial da linguagem quando foi lançada pela primeira vez na versão beta do navegador Netscape 2.0 em setembro de 1995, mas teve seu nome mudado em um anúncio conjunto com a Sun Microsystems em dezembro de 1995 quando foi implementado no navegador Netscape versão 2.0B3.
-A mudança de nome de LiveScript para JavaScript coincidiu com a época em que a Netscape adicionou suporte à tecnologia Java em seu navegador (Applets). A escolha final do nome causou confusão dando a impressão de que a linguagem foi baseada em java, sendo que tal escolha foi caracterizada por muitos como uma estratégia de marketing da Netscape para aproveitar a popularidade do recém-lançado Java.
-JavaScript rapidamente adquiriu ampla aceitação como linguagem de script client-side de páginas web. Como consequência, a Microsoft desenvolveu um dialeto compatível com a linguagem de nome JScript para evitar problemas de marca registrada. JScript adicionou novos métodos para consertar métodos do Javascript relacionados a data que apresentavam problemas[carece de fontes]. JScript foi incluído no Internet Explorer 3.0, liberado em Agosto de 1996. Javascript e Jscript são tão similares que os dois termos são comumente usados de forma intercambiável. A Microsoft entretanto declara muitas características nas quais JScript não conforma com a especificação ECMA.
-Em novembro de 1996 a Netscape anunciou que tinha submetido JavaScript para Ecma internacional como candidato a padrão industrial e o trabalho subsequente resultou na versão padronizada chamada ECMAScript.
-JavaScript tem se transformado na linguagem de programação mais popular da web. Inicialmente, no entanto, muitos profissionais denegriram a linguagem pois ela tinha como alvo principal o público leigo. Com o advento do Ajax, JavaScript teve sua popularidade de volta e recebeu mais atenção profissional. O resultado foi a proliferação de frameworks e bibliotecas, práticas de programação melhoradas e o aumento no uso do JavaScript fora do ambiente de navegadores, bem como o uso de plataformas de JavaScript server-side.4
-Em janeiro de 2009 o projeto CommonJS foi fundado com o objetivo de especificar uma biblioteca padrão para desenvolvimento JavaScript fora do navegador. (Wikipedia)
+	JavaScript foi originalmente desenvolvido por Brendan Eich da Netscape sob o nome de Mocha, posteriormente teve seu nome mudado para LiveScript e por fim JavaScript. LiveScript foi o nome oficial da linguagem quando foi lançada pela primeira vez na versão beta do navegador Netscape 2.0 em setembro de 1995, mas teve seu nome mudado em um anúncio conjunto com a Sun Microsystems em dezembro de 1995 quando foi implementado no navegador Netscape versão 2.0B3.
+	A mudança de nome de LiveScript para JavaScript coincidiu com a época em que a Netscape adicionou suporte à tecnologia Java em seu navegador (Applets). A escolha final do nome causou confusão dando a impressão de que a linguagem foi baseada em java, sendo que tal escolha foi caracterizada por muitos como uma estratégia de marketing da Netscape para aproveitar a popularidade do recém-lançado Java.
+	JavaScript rapidamente adquiriu ampla aceitação como linguagem de script client-side de páginas web. Como consequência, a Microsoft desenvolveu um dialeto compatível com a linguagem de nome JScript para evitar problemas de marca registrada. JScript adicionou novos métodos para consertar métodos do Javascript relacionados a data que apresentavam problemas[carece de fontes]. JScript foi incluído no Internet Explorer 3.0, liberado em Agosto de 1996. Javascript e Jscript são tão similares que os dois termos são comumente usados de forma intercambiável. A Microsoft entretanto declara muitas características nas quais JScript não conforma com a especificação ECMA.
+	Em novembro de 1996 a Netscape anunciou que tinha submetido JavaScript para Ecma internacional como candidato a padrão industrial e o trabalho subsequente resultou na versão padronizada chamada ECMAScript.
+	JavaScript tem se transformado na linguagem de programação mais popular da web. Inicialmente, no entanto, muitos profissionais denegriram a linguagem pois ela tinha como alvo principal o público leigo. Com o advento do Ajax, JavaScript teve sua popularidade de volta e recebeu mais atenção profissional. O resultado foi a proliferação de frameworks e bibliotecas, práticas de programação melhoradas e o aumento no uso do JavaScript fora do ambiente de navegadores, bem como o uso de plataformas de JavaScript server-side.
+	Em janeiro de 2009 o projeto CommonJS foi fundado com o objetivo de especificar uma biblioteca padrão para desenvolvimento JavaScript fora do navegador. (Wikipedia)
 
 2. Classificação (seção 2)
+ 2.1. Geração
+	JavaScript é uma linguagem de script interpretada de terceira geração, projetada para profissionais de informática. Ela possui caracteristicas procedurais e imperativa. Os comandos tradicionais de C como if, while switch estão presentes na linguagem.
+
+
+ 2.2.
 
 3. Conceitos fundamentais (seção 3)
 
