@@ -19,10 +19,17 @@ http://www.inf.ufsc.br/~olinto/ine5622-cap3-132.pdf
 
 2. Classificação (seção 2)
  2.1. Geração
-	JavaScript é uma linguagem de script interpretada de terceira geração, projetada para profissionais de informática. Ela possui caracteristicas procedurais e imperativa. Os comandos tradicionais de C como if, while switch estão presentes na linguagem.
+	JavaScript é uma linguagem de script interpretada de terceira geração, projetada para profissionais de informática. Ela possui caracteristicas procedurais, imperativa, orientada a objetos, funcional e baseada em protótipos. Os comandos tradicionais de C como if, while switch estão presentes na linguagem.
 
+ 2.2. Domínio
+	É uma linguagem primeiramente com um objetivo especifico de atuar nos navegadores alterado as páginas HTMLs dando mais dinamica a elas. Porém como mencionado anteriormente, hoje em dia ela também pode ser utilizado do lado do servidor, promovendo um maior conforto ao desenvolvedor e velocidade no desenvolvimento fazendo com que ele utilize apenas uma linguagem para toda a aplicação.
+ 
+ 2.3. Implementação
+	Por ser uma linguagem de script ela é considerada uma linguagem interpretada, não sendo compilada. Todas as linguagens de "script" são linguagens interpretadas. Ela é executada no interior do navegador enviando comandos ao mesmo para que altere o conteúdo de uma página, ela é processada pelo dispositivo do usuário e não pelo servidor, dessa forma quanto melhor for o dispositivo do usuário mais rápido será a execução de seus scripts.
+	Como é uma linguagem de script o desenvolvedor tem uma agilidade muito grande para a implementação de funcionalidades, entretanto por não ser compilada, onde teria um compilador que faria verificações de erros e otimização, ela se torna uma linguagem com maior tempo de execução.
 
- 2.2.
+ 2.4. Paradigma de Programação
+
 
 3. Conceitos fundamentais (seção 3)
 
@@ -41,3 +48,7 @@ Já vai rolas uns code scala aqui então.
 http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742
 http://pt.wikipedia.org/wiki/JavaScript
 http://en.wikipedia.org/wiki/JavaScriptx
+JavaScript: The definitive guide 6th edition, O'Reilly - David Flanagan
+
+
+
