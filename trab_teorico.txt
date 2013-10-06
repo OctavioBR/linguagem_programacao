@@ -95,6 +95,13 @@ alert("b=" + b + " c=" + c);
 --------------
 	Os tipos primitivos de JavaScript são undefined (representa variáveis sem valores definidos), null, boolean (true ou false), string, numbers. Numbers podem ser inteiros, reais, octal, hexa ou até mesmo na forma exponencial, mas todos eles são considerados como number, também há a palavra reservada "Infinity" que é a representação de infinito e NaN (not a number), sendo do tipo number.
 
+	Em JavaScript existem as propriedades enumeradas de objetos que são criadas através da declaração "var".
+---------------
+var Day = {Friday:"Sexta-Feira", Saturday:"Sábado", Sunday:"Domingo"};
+var today = Day.Friday;
+alert(today);
+---------------
+
 #### Avaliação elaborada ######
 Obs.: Bem fundamentada e ilustrada com exemplos
 Critérios/Caracteristicas de avaliação. Ver seção 4.
