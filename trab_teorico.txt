@@ -29,7 +29,13 @@ http://www.inf.ufsc.br/~olinto/ine5622-cap3-132.pdf
 	Como é uma linguagem de script o desenvolvedor tem uma agilidade muito grande para a implementação de funcionalidades, entretanto por não ser compilada, onde teria um compilador que faria verificações de erros e otimização, ela se torna uma linguagem com maior tempo de execução.
 
  2.4. Paradigma de Programação
-
+	JavaScript é uma linguagem baseada orientação a objetos, mas ao invés de classes ela utiliza-se de protótipos. Dessa forma, muitos fazem confusão crendo que ela não é orientada a objetos por não possuir classes. Através de protótipos, Javascript simula caracteristicas como herança que são feitas com classes em outras linguagens.
+	A tipagem de suas váriaveis é dinâmica e fraca, podendo alterar variaveis que anteriormente eram números inteiros para uma string. O controle delas tem que ser feito pelo desenvolvedor, utilizando-se métodos da linguagem é possível verificar qual o tipo, em determinado momento, da váriavel.
+	Além disso, a linguagem incorpora caracteristicas de programação funcional, tendo uma sintaxe mais simples e um nível de programação mais elevado. Algumas de suas propriedades são as seguintes:    
+		1. Função de primeira classe: é possível passar função ou variavel como parâmetro para outra função e retornar função ou variáveis da mesma.
+		2. Função lambda: não há uma definição de nome para o método, é simplemente aberto ou declarado através de "function() {" e ali tera um novo método que é criado toda vez que é execudao por aquela parte do código. Pode-se criar várias outras funções anonimas, como também é conhecida, dentro de uma principal para executar determinadas tarefas.
+	 
+	
 
 3. Conceitos fundamentais (seção 3)
 
