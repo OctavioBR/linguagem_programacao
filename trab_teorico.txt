@@ -82,7 +82,7 @@ alert(sum);
 
 3. Conceitos fundamentais (seção 3)
 	A tipagem de suas váriaveis é dinâmica e fraca, podendo alterar variaveis que anteriormente eram números inteiros para uma string. O controle delas tem que ser feito pelo desenvolvedor, utilizando-se métodos da linguagem é possível verificar qual o tipo, em determinado momento, da váriavel. A linguagem é "case sensitive", ou seja, diferencia maiúsculo de minúsculo.
-	Ela permite a declaração de variaveis e constantes, as contantes são definidas pela palavra reservada "const" e as variáveis por "var". No exemplo a seguir é demonstrado o uso dos dois tipos, em JavaScript quando o código tenta alterar alguma constante, esta parte do código é simplesmente ignorada. Como mostrado a seguir, sua declaração também é implicita, ou seja, não é necessário informar de qual tipo será a variável ou constante, em outras linguagens isso é feito informando o tipo antes ou depois das variáveis. Outra caracteristica é que as variáveis tem vinculação dinâmica, ou seja, também podem trocar de tipo e não apenas de valor ao decorrer do programa, como mostrado a seguir.
+	Ela permite a declaração de variaveis e constantes, as contantes são definidas pela palavra reservada "const" e as variáveis por "var". No exemplo a seguir é demonstrado o uso dos dois tipos, em JavaScript quando o código tenta alterar alguma constante, esta parte do código é simplesmente ignorada. Como mostrado a seguir, sua declaração também é implicita, ou seja, não é necessário informar de qual tipo será a variável ou constante, em outras linguagens isso é feito informando o tipo antes ou depois das variáveis. Outra caracteristica é que as variáveis tem vinculação dinâmica, ou seja, também podem trocar de tipo e não apenas de valor ao decorrer do programa, como mostrado a seguir. Verificação dinâmica do tipo da variável pelo através de "typeof".
 Exemplo (variáveis, constantes, declaração implicita, vinculação dinâmica):
 ------------ 
 var b = 1;
@@ -92,6 +92,12 @@ b = "aloalo";
 c = 2;
 alert("b=" + b + " c=" + c);
 //resultado: b=aloalo c=1
+
+typeof b;
+//string
+typeof c;
+//nubmer
+
 --------------
 	Os tipos primitivos de JavaScript são undefined (representa variáveis sem valores definidos), null, boolean (true ou false), string, numbers. Numbers podem ser inteiros, reais, octal, hexa ou até mesmo na forma exponencial, mas todos eles são considerados como number, também há a palavra reservada "Infinity" que é a representação de infinito e NaN (not a number), sendo do tipo number.
 
@@ -101,6 +107,39 @@ var Day = {Friday:"Sexta-Feira", Saturday:"Sábado", Sunday:"Domingo"};
 var today = Day.Friday;
 alert(today);
 ---------------
+	Os objetos nesta linguagem possuem seus métodos e atributos como publicos, não há modificadores private ou protected como em java por exemplo, além de todo método/função também ser considerado um objeto.
+	Os operadores aritméticos que possui são os mesmos que na maioria das linguagens, + (adição), - (subtracao), * (multiplicação), ++ (incremento), -- (decremento). Operadores de atribuição são o "=", "+=" (soma e depois coloca o valor na variável) e pode ser feito com qualquer outro operador básico aritmético. Para a concatenação de strings também é usado o operador +.
+Exemplo:
+----------------
+var a = 1;
+var b = 2;
+var c = a + b;
+//c = 3;
+
+var joao = "João";
+var maria = "Maria";
+var concate = joao + maria + "josé";
+//concate = "JoãoMariajosé"
+---------------
+	A linguagem possui operadores de comparação que são recorrentes de outras linguagens e alguns diferentes como listado a seguir:
+		"==" ou "!="  verifica se são iguais ou "não iguais".
+		"===" ou "!==" verifica se são iguais e de mesmo tipo ou não.
+		"&&", ">", "<", "||" classicos operadores como em outras linguagens que representão "e", "maior que", "menor que", "ou" respectivamente.
+	Ao passar uma variável em um método como parâmetor, o que é passado é seu valor e não o endereço como é feito em outras linguagems como Java. No exemplo a seguir, o parâmetro "x" do método changeToB é alterado no interior da sua função para "BBB", entretanto a variável "a" permanece com seu valor inalterado. Este tipo de abordagem evita sérios problemas que podem ocorrer em uma linguagem que passa o endereço ao invés do valor, como um método que outro desenvolvedor implementou altere uma variável que é utilizada em diversos outros lugares.
+Exemplo:
+------------------
+function changeToB(x) {
+    x = "BBB";
+    console.log(x);
+    //x="BBB"
+};
+var a = "AAA";
+changeToB(a);
+console.log(a);
+//a="AAA"
+--------------
+
+	
 
 #### Avaliação elaborada ######
 Obs.: Bem fundamentada e ilustrada com exemplos
