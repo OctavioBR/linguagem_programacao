@@ -30,15 +30,70 @@ http://www.inf.ufsc.br/~olinto/ine5622-cap3-132.pdf
 
  2.4. Paradigma de Programação
 	JavaScript é uma linguagem baseada orientação a objetos, mas ao invés de classes ela utiliza-se de protótipos. Dessa forma, muitos fazem confusão crendo que ela não é orientada a objetos por não possuir classes. Através de protótipos, Javascript simula caracteristicas como herança que são feitas com classes em outras linguagens.
-	A tipagem de suas váriaveis é dinâmica e fraca, podendo alterar variaveis que anteriormente eram números inteiros para uma string. O controle delas tem que ser feito pelo desenvolvedor, utilizando-se métodos da linguagem é possível verificar qual o tipo, em determinado momento, da váriavel.
+Exemplo: 
+------------------------------------
+function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        this.sayHello = function() {
+             alert("My name is " + this.name + ", and i'm " + this.age + " years old");
+        };
+}
+
+var henrique = new Person("Henrique", 65);
+var octavio = new Person("Octavio", 57);
+
+alert("This script was created by " + henrique.name + " - " + octavio.name);
+
+henrique.sayHello();
+octavio.sayHello();
+------------------------------------
+
 	Além disso, a linguagem incorpora caracteristicas de programação funcional, tendo uma sintaxe mais simples e um nível de programação mais elevado. Algumas de suas propriedades são as seguintes:    
 		1. Função de primeira classe: é possível passar função ou variavel como parâmetro para outra função e retornar função ou variáveis da mesma.
 		2. Função lambda: não há uma definição de nome para o método, é simplemente aberto ou declarado através de "function() {" e ali tera um novo método que é criado toda vez que é execudao por aquela parte do código. Pode-se criar várias outras funções anonimas, como também é conhecida, dentro de uma principal para executar determinadas tarefas.
-	 
-	
+Exemplo:
+---------------------------------
+function sum5(a) {
+        return a + 5;
+};
+function sum8(a) {
+        return a + 8;
+};
+function sum(a, otherSumFunc) {
+        return otherSumFunc(a);
+};
+
+var b = 1;
+alert("b equals = " + b);
+
+b = sum(b, sum5);
+alert("sum to b the function sum5, b equals " + b);
+
+b = sum(b, sum8);
+alert("sum to b the function sum8, b equals " + b);
+
+/* função anonima*/
+var sum = function(a,b,c) {
+        return (a+b+c);
+}(1,2,3);
+alert(sum);
+---------------------------------	 
 
 3. Conceitos fundamentais (seção 3)
-
+	A tipagem de suas váriaveis é dinâmica e fraca, podendo alterar variaveis que anteriormente eram números inteiros para uma string. O controle delas tem que ser feito pelo desenvolvedor, utilizando-se métodos da linguagem é possível verificar qual o tipo, em determinado momento, da váriavel. A linguagem é "case sensitive", ou seja, diferencia maiúsculo de minúsculo.
+	Ela permite a declaração de variaveis e constantes, as contantes são definidas pela palavra reservada "const" e as variáveis por "var". No exemplo a seguir é demonstrado o uso dos dois tipos, em JavaScript quando o código tenta alterar alguma constante, esta parte do código é simplesmente ignorada. Como mostrado a seguir, sua declaração também é implicita, ou seja, não é necessário informar de qual tipo será a variável ou constante, em outras linguagens isso é feito informando o tipo antes ou depois das variáveis. Outra caracteristica é que as variáveis tem vinculação dinâmica, ou seja, também podem trocar de tipo e não apenas de valor ao decorrer do programa, como mostrado a seguir.
+Exemplo (variáveis, constantes, declaração implicita, vinculação dinâmica):
+------------ 
+var b = 1;
+const c = 1;
+b = 2;
+b = "aloalo";
+c = 2;
+alert("b=" + b + " c=" + c);
+//resultado: b=aloalo c=1
+--------------
+	Os tipos primitivos de JavaScript são undefined (representa variáveis sem valores definidos), null, boolean (true ou false), string, numbers. Numbers podem ser inteiros, reais, octal, hexa ou até mesmo na forma exponencial, mas todos eles são considerados como number, também há a palavra reservada "Infinity" que é a representação de infinito e NaN (not a number), sendo do tipo number.
 
 #### Avaliação elaborada ######
 Obs.: Bem fundamentada e ilustrada com exemplos
@@ -55,6 +110,6 @@ http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742
 http://pt.wikipedia.org/wiki/JavaScript
 http://en.wikipedia.org/wiki/JavaScriptx
 JavaScript: The definitive guide 6th edition, O'Reilly - David Flanagan
-
+http://www.ibm.com/developerworks/library/wa-javascript/index.html
 
 
